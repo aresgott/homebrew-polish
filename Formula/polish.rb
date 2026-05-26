@@ -2,7 +2,7 @@ class Polish < Formula
   desc "Fix grammar and tone with ChatGPT, copy to clipboard"
   homepage "https://github.com/aresgott/polish"
   url "https://github.com/aresgott/polish/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "eb5b0efeaf400a1f04c2cc3667bb933090de77aa9d8739bd6b959f0048d02dba"
+  sha256 "c21637f199238faad5b8556ed68472f130dcc45caadfa8e3197947037a33ace0"
   license "MIT"
   head "https://github.com/aresgott/polish.git", branch: "main"
 
