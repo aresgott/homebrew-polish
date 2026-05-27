@@ -11,7 +11,7 @@ class Polish < Formula
   def install
     system "npm", "ci", "--ignore-scripts"
     system "npm", "run", "build"
-    libexec.install "dist", "node_modules", "package.json", ".npmrc", ".npmrc"
+    libexec.install "dist", "node_modules", "package.json", ".npmrc"
     bin.install_symlink libexec/"dist/cli.js" => "polish"
   end
 
@@ -19,4 +19,3 @@ class Polish < Formula
     assert_equal "1.0.0", shell_output("#{bin}/polish --version").strip
   end
 end
-
