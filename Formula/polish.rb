@@ -6,12 +6,12 @@ class Polish < Formula
   license "MIT"
   head "https://github.com/aresgott/polish.git", branch: "main"
 
-  depends_on "node@22"
+  depends_on "node"
 
   def install
     system "npm", "ci", "--ignore-scripts"
     system "npm", "run", "build"
-    libexec.install "dist", "node_modules", "package.json", ".npmrc"
+    libexec.install "dist", "node_modules", "package.json", ".npmrc", ".npmrc"
     bin.install_symlink libexec/"dist/cli.js" => "polish"
   end
 
