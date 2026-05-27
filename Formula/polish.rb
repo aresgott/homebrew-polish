@@ -19,3 +19,4 @@ class Polish < Formula
     assert_equal "1.0.0", shell_output("#{bin}/polish --version").strip
   end
 end
+
