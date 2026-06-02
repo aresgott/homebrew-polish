@@ -1,8 +1,8 @@
 class Polish < Formula
   desc "Fix grammar and tone with ChatGPT, copy to clipboard"
   homepage "https://github.com/aresgott/polish"
-  url "https://github.com/aresgott/polish/archive/refs/tags/v1.0.5.tar.gz"
-  sha256 "518963fdfb9796c18cf87c1d2521aff7c9f2b065babd97e8d05da4d300e17796"
+  url "https://github.com/aresgott/polish/archive/refs/tags/v1.0.6.tar.gz"
+  sha256 "04590ded42dea42645f98c553e05f4b16b0c824349514ba03d3c9f863ac8c464"
   license "MIT"
   head "https://github.com/aresgott/polish.git", branch: "main"
 
@@ -16,6 +16,6 @@ class Polish < Formula
   end
 
   test do
-    assert_equal "1.0.5", shell_output("#{bin}/polish --version").strip
+    assert_equal "1.0.6", shell_output("#{bin}/polish --version").strip
   end
 end
